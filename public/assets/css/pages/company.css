@@ -1,0 +1,67 @@
+#company .squareblue {
+    background: rgba(52, 152, 219,1);
+    height: 25px!important;
+    width: 25px!important;
+    float: left;
+    margin-right: .5em;
+}
+
+#company .vision_quote {
+    margin: 2em 0 0 0;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    color: rgba(52, 152, 219,.75);
+}
+
+#company section {
+    margin: 4em 0;
+}
+
+#company h2 {
+    font-size: 1.6rem;
+    margin: 2em 0;
+}
+
+#history {
+    margin: 0;
+}
+
+#history h2 {
+    margin: 0 0 2em 0;
+}
+
+#management .sided {
+    border-right: 1px solid rgba(52, 152, 219,.5);
+}
+
+#management .profile_head {
+    margin-bottom: 1em;
+}
+
+#management .col-sm-12:first-child, #management .col-xs-12:first-child {
+    padding-bottom: 2em;
+}
+
+#management .col-sm-12 img, #management .col-xs-12 img {
+    margin: 0 auto;
+}
+
+#management .col-sm-12 h4, #management .col-sm-12 p, #management .col-xs-12 h4, #management .col-xs-12 p {
+    text-align: center;
+}
+
+#sistercompany .second {
+    margin-top: 1em;
+}
+
+#sistercompany .highlight {
+    font-weight: bold;
+}
+
+#sistercompany img.img-responsive {
+    padding: 1em 0;
+}
+
+#sistercompany .col-xs-12 img {
+    width: 100%;
+}

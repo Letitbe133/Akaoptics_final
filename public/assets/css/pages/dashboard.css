@@ -1,0 +1,379 @@
+/*
+*
+*	AKA Optics Website
+*	- DASHBOARD.CSS -
+*	By: Chloé Carpentier, Lionel Lafont, Leonardo Balland, Kevin Silvert;
+*	Created at: 10/12/2016
+*
+*/
+
+body {
+    background: rgba(189, 195, 199,1.0);
+}
+
+header {
+    display: none;
+}
+
+footer {
+    display: none;
+}
+
+main {
+    padding: 0;
+    margin: 0;
+}
+
+.btndash {
+  margin: 1em 0;
+  padding: 1em;
+  background: #3498db;
+  border: none;
+  color: #fff;
+  transition: all .2s ease-out;
+}
+
+.btndash:hover {
+  background: rgba(255,255,255,.75);
+  color: #3498db;
+  transition: all .5s ease-in;
+}
+
+aside {
+    position: fixed;
+    top: 0; left: 0;
+    float: left;
+    height: 100vh;
+    width: 10vw;
+    background: #3498db;
+    padding: 0;
+    z-index:9999;
+}
+
+@media only screen and (max-width : 767px) {
+  aside {
+    position: fixed;
+    top: 0; left: 0;
+    float: left;
+    height: 100vh;
+    width: 20vw;
+    background: #3498db;
+    padding: 0;
+    z-index:9999;
+  }   
+  
+  .dashboard-nav {
+    position: relative;
+    width: 90vw;
+    height: 100px;
+    background: #fff;
+    margin: 0 0 2em 20vw;
+    padding: 20px;
+  }
+  
+  .stats-wrapper h1 {
+    margin-left: 10vw;
+  }
+}
+
+#sidenav .sidenav-brand {
+    display: block;
+    margin: 0 auto 2em 0;
+    padding-top: 2em;
+    text-align: center;
+}
+
+
+#sidenav ul li a {
+    width: 100%;
+    text-align: center;
+    border-radius: 0px;
+}
+
+#sidenav ul li a, #sidenav ul li a > i {
+    font-size: 2rem;
+    color: rgba(255,255,255,.2);
+}
+
+#sidenav ul li, #sidenav ul li a > i {
+    font-size: 2rem;
+    color: rgba(255,255,255,.5);
+}
+
+#sidenav ul li a:hover {
+    background: rgba(255,255,255,.5);
+    color: rgba(255,255,255,.75);
+    border-radius: none;
+}
+
+#sidenav ul li a:hover > i {
+    color: rgba(255,255,255,1);
+}
+
+.dashboard-nav {
+    position: relative;
+    height: 100px;
+    background: #fff;
+    margin: 0 0 2em 10vw;
+    padding: 20px;
+}
+
+.dashboard-nav .title {
+    float: right;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    color: rgba(0,0,0,.5);
+    font-size: 1rem;
+}
+.dashboard-nav .title span {
+    color: rgba(0,0,0,.3);
+    font-weight: normal;
+    font-size: .9rem;
+    display: block;
+}
+
+.dashboard-nav .info {
+    float: left;
+    line-height: 35px;
+}
+
+@media only screen and (min-width : 320px) {
+  .dashboard-nav .info {
+    display: none;
+  }
+}
+
+.container h1 {
+  color: rgba(149, 165, 166,1.0);
+}
+
+.stats-wrapper ul li.col-md-4 {
+    list-style-type: none;
+    display: inline-block;
+    background: #fff;
+    border-right: 1px solid rgba(0,0,0,.2);
+}
+
+.stats-wrapper ul li:last-child {
+  border-right: none;
+}
+
+@media only screen and (min-width : 320px) {
+  .stats-wrapper ul li.col-xs-12 {
+    border-bottom: 1px solid rgba(0,0,0,.2);
+  }      
+  
+  .stats-wrapper ul li:last-child {
+    border-bottom: none;
+  }
+}
+
+.stat-container {
+    position: relative;
+    padding: 2em;
+}
+
+.stat-container h2 {
+    text-align: center;
+}
+
+.stat {
+  position: relative;
+  display: inline-block;
+  color: #3498db;
+  font-size: 20px;
+  text-align: center;
+  padding: 0;
+}
+
+.stat figcaption {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    font-size: 6rem;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.outer {
+  fill: transparent;
+  stroke: #3498db;
+  stroke-width: 20;
+  stroke-dasharray: 534;
+  transition: stroke-dashoffset 1s;
+  -webkit-animation-play-state: running;
+  -moz-transform: rotate(-89deg) translateX(-190px);
+}
+
+.stat:hover .outer {
+  stroke-dashoffset: 534 !important;
+  -webkit-animation-play-state: paused;
+}
+
+
+/* Set the initial values for the animation */
+.stat[data-percent='100'] .outer {
+  stroke-dashoffset: 0;
+  -webkit-animation: show100 2s;
+  animation: show100 2s;
+}
+
+.stat[data-percent='75'] .outer {
+  stroke-dashoffset: 133;
+  -webkit-animation: show75 2s;
+  animation: show75 2s;
+}
+
+.stat[data-percent='50'] .outer {
+  stroke-dashoffset: 267;
+  -webkit-animation: show50 2s;
+  animation: show50 2s;
+}
+
+.stat[data-percent='25'] .outer {
+  stroke-dashoffset: 401;
+  -webkit-animation: show25 2s;
+  animation: show25 2s;
+}
+
+.stat[data-percent='0'] .outer {
+  stroke-dashoffset: 800;
+  -webkit-animation: show25 2s;
+  animation: show25 2s;
+}
+
+@-webkit-keyframes show100 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes show100 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes show75 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  
+  to {
+    stroke-dashoffset: 134;
+  }
+}
+
+@keyframes show75 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  
+  to {
+    stroke-dashoffset: 124;
+  }
+}
+
+@-webkit-keyframes show50 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  
+  to {
+    stroke-dashoffset: 267;
+  }
+}
+
+@keyframes show50 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  
+  to {
+    stroke-dashoffset: 267;
+  }
+}
+
+@-webkit-keyframes show25 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  
+  to {
+    stroke-dashoffset: 401;
+  }
+}
+
+@keyframes show25 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  
+  to {
+    stroke-dashoffset: 401;
+  }
+}
+
+h2 {
+    color:#3498db;
+}
+
+label {
+    color:#3498db;
+}
+
+.dashboard-wrapper {
+    position: relative;
+    margin-left: 10vw;
+}
+
+.dashboard_stats { }
+
+.dashboard_stats .number {
+    font-size: 4em;
+}
+
+#newspecContent {
+    position: absolute;
+    top: 0;
+    background: white;
+    padding: 2em;
+    width: 50vw;
+    height: 60vh;
+    border: 1px solid rgba(0,0,0,.2);
+    overflow-y: scroll;
+}
+
+#addSpec {
+    display: none;
+}
+
+#settings section {
+  background: #fff;
+  padding: 2em 20px;
+}
+
+#settings form input {
+  border-radius: 0px;
+  box-shadow: none;
+}
+
+#settings form label {
+  color: rgba(0,0,0,.5);
+}
+
+#settings form input[type="file"] {
+  background: rgba(255,255,255,.75);
+  color: #3498db;
+}

@@ -1,0 +1,198 @@
+/*
+*
+*	AKA Optics Website
+*	- HOME.CSS -
+*	By: Chloé Carpentier, Lionel Lafont, Leonardo Balland, Kevin Silvert;
+*	Created at: 10/12/2016
+*
+*/
+
+/* GENERAL STYLES */
+*{}
+html,body
+{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-size: 85%;
+}
+
+header {
+    margin-bottom: 1em;
+}
+
+#header-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center center;
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+    background: rgba(0,0,0,.1);
+}
+
+#header-image img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+footer {
+    margin-top: 2em;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: rgba(52, 152, 219,1);
+}
+/************ Socail icons footer *****************/
+.fa{
+    color: #2980b9;
+}
+.social-icons{
+    list-style-type: none;
+}
+.social-icon {
+    color: #fff;
+}
+ul.social-icons {
+    margin-top: 10px;
+}
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+.social-icons li i {
+     padding:10px 14px;
+     width:40px;
+}
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+.fa-facebook {
+    /*padding:10px 14px;*/
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    /*background-color: #322f30;*/
+}
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+.fa-twitter {
+    /*padding:10px 10px;*/
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    /*background-color: #322f30;*/
+}
+.fa-twitter:hover {
+    background-color: #00aced;
+}
+.fa-google-plus {
+    /*padding:10px 10px;*/
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    /*background-color: #322f30;*/
+}
+.fa-google-plus:hover {
+    background-color: #D82F27;
+}
+.fa-linkedin {
+    /*padding:10px 10px;*/
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    /*background-color: #322f30;*/
+}
+.fa-linkedin:hover {
+    background-color:#0e76a8;
+}
+
+
+/***** NAV ****/ 
+
+.navbar.navbar-default {
+	background: none !important;
+	border-color: transparent;
+}
+
+li.menu {
+	font-weight: bold;
+	letter-spacing: normal;
+	margin-right: 5px;
+	height: auto;
+	padding: 0 10px;
+	margin: 0;
+}
+
+li.menu a {
+    margin-top: 20px!important;
+    padding: 0;
+    margin: 0;
+}
+
+li.menu a:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+li.menu a:hover {
+    color: #3498db!important;
+}
+
+li.menu a:hover:after {
+    width: 100%;
+    background: #3498db;
+}
+
+a{
+    color:#3498db;
+}
+
+a:hover{
+    color:#3498db;
+}
+
+.logo{
+    width:auto;
+    height:45px;
+}
+
+.btn-primary {
+    background: rgba(52, 152, 219,1)!important;
+}

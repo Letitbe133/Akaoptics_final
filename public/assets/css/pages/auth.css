@@ -1,0 +1,59 @@
+body {
+    background: #3498db url('../../img/auth-login.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+footer {
+    color: white;
+}
+
+.navbar-right, .navbar-toggle {
+    display: none;
+}
+
+#dash-login {
+    padding: 2em 0;
+}
+
+h1 {
+    color: rgba(0,0,0,.2);
+}
+
+.loginform {
+    background: rgba(255,255,255,.5);
+    padding: 1em 0;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.form-group:first-child {
+    margin-top: 2em;
+}
+
+input {
+    border: none;
+    height: 3em;
+    padding: 5px;
+}
+
+.loginbtn {
+    border: none;
+    padding: 10px;
+    color: white;
+    transition: all .4s ease-out;
+}
+
+.loginbtn:hover {
+    background: white;
+    color: #3498db;
+    transition: all .4s ease-in;
+}
+
+.btn-link {
+    color: rgba(255,255,255,1);
+    transition: all .3s ease;
+}
+
+#dash-password input[type="email"] {
+    background: rgba(255,255,255,1);
+}

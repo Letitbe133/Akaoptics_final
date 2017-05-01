@@ -1,0 +1,24 @@
+GitHub
+        Synchronisation :
+            git clone https://github.com/gremet/rtm.git
+        
+        Recuperer un depot :
+            git pull
+        
+        Voir le status des fichiers
+            git status                      
+        
+        Choix des fichiers, si tous mettre -A
+            git add nom_fichier1 nom_fichier2 ou -A
+        
+        Enregistrement en local des fichiers (apres git add)
+            git commit -m "commentaire pour l'envoi"
+        
+        Envoi des fichiers (enregitrement sur git)
+            git push
+                nom d'utilisateur
+                mdp
+                
+                
+    Création de branche 
+    git branch nom de la branche 

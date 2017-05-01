@@ -1,0 +1,174 @@
+/*
+*
+*	AKA Optics Website
+*	- PRODUCTS.CSS -
+*	By: Chloé Carpentier, Lionel Lafont, Leonardo Balland, Kevin Silvert;
+*	Created at: 10/12/2016
+*
+*/
+
+
+#products {}
+
+#products h2 {
+  margin: 1em;
+}
+
+/* RESTYLING BOOTSTRAP BUTTON */
+#products .btn {
+  border-radius: 0;
+  border-color: transparent;
+  font-weight: lighter;
+}
+/* MAIN CONTAINER */
+.swiper {
+  width: 100%;
+  height: 420px;
+  margin: 2em auto 2em auto;
+  overflow: hidden;
+}
+/* SECTIONS CONTAINER */
+.swipe-section {
+    position: relative;
+    transition: all .3s ease;
+}
+/* ITEM SECTIONS STYLE */
+.swipe-item {
+    float: left;
+    width: 220px;
+    height: 520px;
+    margin: 10px;
+    padding: 2em 2em 2em 2em;
+    margin-top:-3em;
+    transform: rotate(10deg);
+    user-select: none;
+    cursor: pointer;
+    overflow: hidden;
+}
+.swipe-item:hover > .swipe-img {
+    filter: grayscale(0);
+    opacity: .5;
+    transition: all .3s ease;
+}
+
+.swipe-item:hover > .swipe-content h3 {
+    color: rgba(52, 152, 219,1.0);
+    transition: all .5s ease;
+}
+
+/*HELPER SECTION STYLE*/
+.swipe-helper { width: 220px; cursor: default; }
+.swipe-helper img {
+  position: absolute;
+  bottom: 240px;
+  opacity: 0;
+  animation: roll 3s infinite backwards;
+}
+/* Animating helper icon*/
+@keyframes roll {
+  0%, 100% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  75% {
+    transform: translateX(100px);
+  }
+}
+/* STYLING ITEM SECTION CONTENT */
+.swipe-content {
+  position: relative;
+    transform: rotate(-10deg);
+    height: 520px;
+}
+.swipe-content h3 {
+  color: #333;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 4em;
+  transition: all .2s ease;
+}
+.swipe-content .subtitle {
+  position: absolute;
+  top: 0;
+  left: 2em;
+  font-size: 14px;
+  padding-bottom: 1em;
+  color: rgba(52, 152, 219,1.0);
+  text-transform: uppercase;
+}
+.swipe-content p {
+  color: #333;
+  font-size: 14px;
+}
+.swipe-footer {
+  position: absolute;
+  bottom: 120px;
+  left: 0;
+  width: 100%;
+  display: none;
+}
+
+.swipe-footer i {
+  color: #fff;
+}
+/*Animating background picture */
+@keyframes filter-animation {
+  0% {
+    filter: grayscale(100%);
+  }
+  100% {
+    filter: grayscale(0%);
+  }
+}
+/* Initializing the background picture container */
+.swipe-item::before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  z-index:-1;
+}
+.swipe-img {
+  position: absolute;
+  background: #ccc;
+  top: -2em;
+  left: -1em;
+  height: 100%;
+  width: auto;
+  filter: grayscale(100%);
+  opacity: 0.1;
+  transition: all .2s ease;
+}
+
+/*ACTIVE STYLES*/
+.swipe-item.active {
+  animation: filter-animation .75s backwards;
+}
+.swipe-item.active > .swipe-content h3 {
+  color: rgba(52, 152, 219,1.0);
+}
+.swipe-item.active > .swipe-content span,
+.swipe-item.active > .swipe-content p {
+  color: white;
+}
+.swipe-item.active:before {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+.swipe-item.active .swipe-img {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+
+.justify{text-align: justify; text-align:center; color:#3498db; margin-top: 5%;}
+

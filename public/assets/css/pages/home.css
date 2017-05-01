@@ -1,0 +1,228 @@
+/*
+*
+*	AKA Optics Website
+*	- home.CSS -
+*	By: Chloé Carpentier, Lionel Lafont, Leonardo Balland, Kevin Silvert;
+*	Created at: 10/12/2016
+*
+*/
+/************************************
+*************CAROUSEL***************/
+header {
+	margin-bottom: 1em;
+}
+#myCarousel{
+	background-size: cover;
+	width: 100%;
+	margin-top: 0;
+
+}
+.carousel-inner{
+	width: 100%;
+	height: 60vh;
+	margin: auto;
+}
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
+	margin: 0 auto !important;
+	margin-top: -10vh;
+}
+
+.carousel-control  {
+ 	background-color: rgba(255, 255, 255, 0) !important;
+ 	background-image: none !important;
+ }
+
+.carousel-indicators img {
+	max-width: 100%;
+	margin: 0px auto;
+	background: linear-gradient(#C0BFBF, #DBDADF, #F5F4FA);
+}
+
+.carousel-indicators {
+	width: 100%;
+	left: auto;
+	margin-left: 0px;
+
+}
+
+.carousel-indicators .active {
+	opacity: 1;
+}
+
+.carousel-indicators li, .carousel-indicators .active {
+	height: auto;
+	width: 70px;
+	text-indent: 0px;
+}
+
+.carousel-indicators li{
+	-webkit-filter: grayscale(100%);
+}
+
+.carousel-indicators .active {
+	-webkit-filter: grayscale(0%);
+}
+
+.carousel-indicators li {
+    border: none;
+    border-radius: 0px;
+}
+
+.item {
+	position: relative;
+}
+
+.item h2{
+
+	color: #3498db;
+	letter-spacing: 3px;
+	font-family: sans-serif;
+	text-shadow: none;
+
+}
+
+.item .carousel-caption{
+	width:100% !important;
+	margin: 0 auto !important;
+	z-index:9999;
+
+}
+
+.carousel-caption {
+	position: absolute;
+	width: 50%;
+	height: 50%;
+	left: 0;
+	top: 0;
+}
+
+.carousel-caption h2 {
+	font-size: 2.4rem;
+	line-height: 0;
+	padding: 0;
+	margin: 0;
+	font-weight: bold;
+}
+
+.img-responsive{
+	bottom:0 auto;
+}
+@media (max-width: 1024px){
+	.carousel-indicators{
+		display:none;
+	}
+	.carousel-caption h2{
+		font-size: 2em;
+	}
+	#home{
+		margin-top: 50px;
+	}
+}
+
+
+@media (max-width:640px){
+	.carousel-caption h2{
+		font-size: 1em;
+	}
+	#home{
+		margin-top: 20px;
+	}
+}
+/******************************************/
+#events {
+	background: #3498db;
+	padding: 10px 0;
+	height: auto;
+	overflow: hidden;
+	text-align: center;
+	font-size: 2em;
+}
+
+/* Décommenter les lignes suivantes pour rétablir l'animation sur les events */
+
+/*.event1 {
+	color: #fff;
+	font-size: 1.2rem;
+	font-weight: bold;
+}*/
+
+/*.event2 {
+	background-color: #3498db;
+	width: 100%;
+	height: 35px;
+	text-align: center;
+	color: white;
+}*/
+
+/*.activeEvent {
+	position: absolute;
+	display: block!important;
+	top:10px;
+	left: 150vw;
+	text-align: center;
+	font-size: 1rem;
+	font-weight: normal;
+	line-height: 1.1em;
+	color: #fff;
+	animation-duration: 8s;
+	animation-name: slidein;
+	width: 100%;
+}*/
+
+#events ul li {
+	display: block;
+}
+
+
+
+#events ul li a {
+	color: #fff;
+}
+
+.blueband {
+	width: 100%;
+	height: auto;
+	background-color: #3498db;
+	color: white;
+	text-align: center;
+}
+
+@media (max-width: 1024px){
+	.hidescreen {
+		display:none;
+	}
+}
+
+
+
+
+@keyframes slidein {
+  0% {
+  	left: 150vw;
+  }
+  35% {
+  	left: 0vw;
+  }
+  75% {
+  	left: 0vw;
+  }
+  100% {
+  	left: 150vw;
+  }
+}
+
+.meet {
+	color:#3498db;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.evcolor {color:#3498db;}
+
+@media(max-width:1024px) {
+
+	.carousel-indicators{
+		display:none;
+	}
+}
