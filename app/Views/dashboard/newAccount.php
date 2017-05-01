@@ -1,4 +1,4 @@
-<?php $this->layout('layout', ['title' => 'Contact']) ?>
+<?php $this->layout('layout', ['title' => 'New account']) ?>
 <?php $this->start('main_content') ?>
 
 <div id="dash-new-account">
@@ -30,9 +30,9 @@
                 <button type="submit" class="btn btn-primary">Submit</button>
         </form>
         </div>
-        
+
     </div>
-    
+
 </div>
 
 

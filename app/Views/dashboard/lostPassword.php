@@ -1,4 +1,4 @@
-<?php $this->layout('layout', ['title' => 'Contact']) ?>
+<?php $this->layout('layout', ['title' => 'Lost password']) ?>
 <?php $this->start('main_content') ?>
 
 <div id="dash-lost-password">
@@ -15,9 +15,9 @@
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
         </div>
-        
+
     </div>
-    
+
 </div>
 
 

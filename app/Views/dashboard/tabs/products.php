@@ -1,4 +1,4 @@
-<?php $this->layout('layout', ['title' => 'Manage Users']) ?>
+<?php $this->layout('layout', ['title' => 'Manage Products']) ?>
 
 <?php $this->start('main_content') ?>
 <div class="main-dashboard">
