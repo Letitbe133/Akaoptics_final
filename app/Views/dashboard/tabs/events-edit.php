@@ -6,7 +6,7 @@
         <div class="col-xs-2">
             <?= $this->insert('dashboard/navTabs'); ?>
         </div>
-    
+
         <div id="dashboard-events-edit" class="col-xs-8 col-xs-offset-1">
             <div class="container">
                <h2>Edit Event</h2>
@@ -27,16 +27,16 @@
                     <div class="form-group">
                         <input class="form-control" type="text" name="link" value="<?= $event["link"] ?>"/>
                     </div>
-                    
+
                     <div class="form-group">
                         <input type="submit" class="btn btn-primary col-xs-3" value="Update"/>
                     </div>
                 </form>
             </div>
         </div>
-                
+
 <?php $this->stop('main_content') ?>
 
 <?php $this->start('css') ?>
-	<link rel="stylesheet" href="<?= $this->assetUrl('css/pages/dashboard.css') ?>">
+	<link rel="stylesheet" href="<?= $this->assetUrl('css/pages/dashboard.min.css') ?>">
 <?php $this->stop('css') ?>

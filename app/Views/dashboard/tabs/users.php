@@ -45,5 +45,5 @@
 <?php $this->stop('main_content') ?>
 
 <?php $this->start('css') ?>
-	<link rel="stylesheet" href="<?= $this->assetUrl('css/pages/dashboard.css') ?>">
+	<link rel="stylesheet" href="<?= $this->assetUrl('css/pages/dashboard.min.css') ?>">
 <?php $this->stop('css') ?>

@@ -4,7 +4,7 @@
 
 <div class="loginform">
     <h1 class="text-center">Sign Up</h1>
-    
+
     <form class="text-center" action="/akaoptics/public/signup" method="POST">
         <div class="form-group">
             <input type="text" name="first_name" placeholder="First name"/>
@@ -27,5 +27,5 @@
 <?php $this->stop('main_content') ?>
 
 <?php $this->start('css') ?>
-	<link rel="stylesheet" href="<?= $this->assetUrl('css/pages/auth.css') ?>">
+	<link rel="stylesheet" href="<?= $this->assetUrl('css/pages/auth.min.css') ?>">
 <?php $this->stop('css') ?>

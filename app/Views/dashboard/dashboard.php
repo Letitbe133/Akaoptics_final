@@ -5,24 +5,24 @@
     <aside>
         <?= $this->insert('dashboard/navTabs'); ?>
     </aside>
-    
+
     <?= $this->insert('dashboard/dashboardNav'); ?>
-    
+
     <div class="dashboard-wrapper">
-            
+
             <div class="container">
 
                 <div class="stats-wrapper">
                     <h1>Stats Content Data</h1>
                     <ul>
                     <?php foreach($stats as $key=>$stat) { ?>
-                    
+
                         <li class="col-xs-12 col-md-4">
                             <div class="stat-container">
                                 <h2><?= ucfirst($key); ?></h2>
                                 <?php
                                     $percent;
-                                    
+
                                     if($stat == 0) { $percent = 0; }
                                     else if($stat<2) { $percent = 25; }
                                     else if($stat>=2 && $stat<4) { $percent = 50; }
@@ -37,20 +37,20 @@
                                 </figure>
                             </div>
                         </li>
-                        
+
                     <?php } ?>
                     </ul>
                 </div>
-                
+
             </div>
-            
+
     </div>
-        
+
 </div>
 <?php $this->stop('main_content') ?>
 
 <?php $this->start('css') ?>
-	<link rel="stylesheet" href="<?= $this->assetUrl('css/pages/dashboard.css') ?>">
+	<link rel="stylesheet" href="<?= $this->assetUrl('css/pages/dashboard.min.css') ?>">
 <?php $this->stop('css') ?>
 
 <?php $this->start('js') ?>

@@ -67,7 +67,7 @@
 <?php $this->stop('main_content') ?>
 
 <?php $this->start('css') ?>
-	<link rel="stylesheet" href="<?= $this->assetUrl('css/pages/achievements.css') ?>">
+	<link rel="stylesheet" href="<?= $this->assetUrl('css/pages/achievements.min.css') ?>">
 <?php $this->stop('css') ?>
 
 <?php $this->start('js') ?>

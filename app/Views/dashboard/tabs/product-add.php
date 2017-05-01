@@ -6,33 +6,33 @@
         <div class="col-xs-2">
             <?= $this->insert('dashboard/navTabs'); ?>
         </div>
-    
+
         <div id="dashboard-products-add" class="col-xs-8 col-xs-offset-1">
             <div class="container">
                 <h2>Add Product</h2>
                 <p><strong><?= $msg ?></strong></p>
                 <form enctype="multipart/form-data" method="POST">
-                
+
                     <div class="form-group ">
                         <label for="name">Title</label>
                         <input class="form-control" type="text" id="name" name="name">
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="subtitle">Subtitle</label>
                         <input class="form-control" type="text" id="subtitle" name="subtitle">
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="description">Description</label>
                         <input class="form-control" type="text" id="description" name="description">
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="tagline">Tagline</label>
                         <input class="form-control" type="text" id="tagline" name="tagline">
                     </div>
-                    
+
                     <h2>Specifications</h2>
                     <a id="newSpec" href="#!" class="btn btn-primary">Add a new specification</a>
                     <div class="form-group">
@@ -42,24 +42,24 @@
                             <?php } ?>
                         </select>
                     </div>
-                    
+
                     <div class="form-group">
-                        
+
                         <label for="tagline">Tagline</label>
                         <input class="form-control" type="text" id="tagline" name="tagline">
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="picture">Picture</label>
                         <input class="form-control" type="file" id="picture" name="picture">
                     </div>
-                        
+
                     <div class="form-group">
                         <button type="submit" class="btn btn-primary btn-lg btn-create-spec col-xs-3">Create new product</button>
-                    </div> 
-                    
+                    </div>
+
                 </form>
-                
+
                 <div id="newspecContent">
                     <a href="#" id="closeSpec" class="pull-right"><i class="fa fa-close"></i></a>
                     <div class="row">
@@ -75,7 +75,7 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </div>
@@ -87,5 +87,5 @@
 <?php $this->stop('js') ?>
 
 <?php $this->start('css') ?>
-	<link rel="stylesheet" href="<?= $this->assetUrl('css/pages/dashboard.css') ?>">
+	<link rel="stylesheet" href="<?= $this->assetUrl('css/pages/dashboard.min.css') ?>">
 <?php $this->stop('css') ?>

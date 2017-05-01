@@ -6,7 +6,7 @@
         <div class="col-xs-2">
             <?= $this->insert('dashboard/navTabs'); ?>
         </div>
-    
+
         <div id="dashboard-users-edit" class="col-xs-8 col-xs-offset-1">
             <div class="container">
                <h2>Edit User</h2>
@@ -26,7 +26,7 @@
                             <?php if($user["role"] === "user") { ?>
                                 <option value="<?= $user["role"] ?>" selected>User</option>
                                 <option value="admin">Admin</option>
-                            <?php } else { ?> 
+                            <?php } else { ?>
                                 <option value="<?= $user["role"] ?>" selected>Admin</option>
                                 <option value="user">User</option>
                             <?php } ?>
@@ -38,9 +38,9 @@
                 </form>
             </div>
         </div>
-                
+
 <?php $this->stop('main_content') ?>
 
 <?php $this->start('css') ?>
-	<link rel="stylesheet" href="<?= $this->assetUrl('css/pages/dashboard.css') ?>">
+	<link rel="stylesheet" href="<?= $this->assetUrl('css/pages/dashboard.min.css') ?>">
 <?php $this->stop('css') ?>

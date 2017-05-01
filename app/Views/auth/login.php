@@ -29,5 +29,5 @@
 <?php $this->stop('main_content') ?>
 
 <?php $this->start('css') ?>
-	<link rel="stylesheet" href="<?= $this->assetUrl('css/pages/auth.css') ?>">
+	<link rel="stylesheet" href="<?= $this->assetUrl('css/pages/auth.min.css') ?>">
 <?php $this->stop('css') ?>
