@@ -33,8 +33,8 @@
                   $form = $_POST;
 
                   $subject = 'Quotation request from your website';
-                  //$email = $res[0]['website_contact_email'];
-                  $email = 'lafont.lionel@gmail.com';
+                  $email = $res[0]['website_contact_email'];
+                  // $email = 'lafont.lionel@gmail.com';
 
                   $message =
                       '<h2>You got a new product request from '.$form['firstname'] .' '. $form['lastname'] . '</h2>'
